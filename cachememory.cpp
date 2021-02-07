@@ -12,7 +12,7 @@ int main()
     {
         for (int j = 0; j < size; j++)
         {
-            x[j][i] = i + j;
+            x[j][i] = i + j; // this costs more time than x[i][j] because of memory address layout
             //std::cout << &x[j][i] << ": i=" << i << ", j=" << j << std::endl;
         }
     }
